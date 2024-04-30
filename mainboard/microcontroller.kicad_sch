@@ -4471,7 +4471,7 @@
 				)
 			)
 		)
-		(property "Footprint" "BreadboardBuddy:SW_SPST_3.3x3.1"
+		(property "Footprint" "lib:SW_SPST_3.3x3.1"
 			(at 109.22 68.58 0)
 			(effects
 				(font
@@ -4677,6 +4677,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 218.44 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "RMCF0603FT10K0CT-ND"
+			(at 218.44 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RMCF0603FT10K0"
 			(at 218.44 138.43 0)
 			(effects
 				(font
@@ -5143,6 +5161,24 @@
 			)
 		)
 		(property "Description" "A microcontroller by Raspberry Pi"
+			(at 157.48 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "2648-SC0914(13)CT-ND"
+			(at 157.48 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SC0914(13)"
 			(at 157.48 106.68 0)
 			(effects
 				(font
@@ -5836,7 +5872,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "BreadboardBuddy:SW_SPST_3.3x3.1"
+		(property "Footprint" "lib:SW_SPST_3.3x3.1"
 			(at 63.5 127 0)
 			(effects
 				(font
@@ -6210,7 +6246,7 @@
 				)
 			)
 		)
-		(property "Footprint" "BreadboardBuddy:8-UFDFN"
+		(property "Footprint" "lib:8-UFDFN"
 			(at 73.66 106.68 0)
 			(effects
 				(font
@@ -7072,6 +7108,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 218.44 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "RMCF0603FT10K0CT-ND"
+			(at 218.44 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RMCF0603FT10K0"
 			(at 218.44 148.59 0)
 			(effects
 				(font

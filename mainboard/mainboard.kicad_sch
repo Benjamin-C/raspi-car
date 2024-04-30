@@ -2720,6 +2720,102 @@
 				)
 			)
 		)
+		(symbol "GND_3"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_3_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_3_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Motor:Motor_DC"
 			(pin_names
 				(offset 0)
@@ -3046,8 +3142,8 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "SW"
-				(at 0 5.08 0)
+			(property "Reference" "SW1"
+				(at 0 -8.89 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3055,14 +3151,14 @@
 				)
 			)
 			(property "Value" "SW_SPDT"
-				(at 0 -5.08 0)
+				(at 0 -6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Button_Switch_THT:SW_Slide_SPDT_Straight_CK_OS102011MS2Q"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3081,6 +3177,24 @@
 				)
 			)
 			(property "Description" "Switch, single pole double throw"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "DPN" "2449-MS1206L6-ND"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "MS1206L6"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3204,6 +3318,24 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -6.35 90)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "M"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -7061,6 +7193,24 @@
 				(hide yes)
 			)
 		)
+		(property "DPN" "RMCF0603FT10K0CT-ND"
+			(at 152.4 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RMCF0603FT10K0"
+			(at 152.4 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d22f976f-5082-4324-8f8d-bf94056a7aa0")
 		)
@@ -7584,6 +7734,24 @@
 			)
 		)
 		(property "Description" "DC Motor"
+			(at 219.71 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "455-1704-ND"
+			(at 219.71 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "B2B-PH-K-S"
 			(at 219.71 76.2 0)
 			(effects
 				(font
@@ -8286,6 +8454,24 @@
 				(hide yes)
 			)
 		)
+		(property "DPN" "RMCF0603FT10K0CT-ND"
+			(at 132.08 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RMCF0603FT10K0"
+			(at 132.08 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "228140ec-a890-470d-812b-3de599496043")
 		)
@@ -8346,6 +8532,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 100.33 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "RMCF0603FT1K00CT-ND"
+			(at 100.33 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RMCF0603FT1K00"
 			(at 100.33 180.34 0)
 			(effects
 				(font
@@ -8841,7 +9045,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal"
 			(at 241.3 132.08 0)
 			(effects
 				(font
@@ -8860,6 +9064,24 @@
 			)
 		)
 		(property "Description" "USB 2.0-only 14P Type-C Receptacle connector"
+			(at 237.49 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "2073-USB4105-GF-ACT-ND"
+			(at 237.49 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "USB4105-GF-A"
 			(at 237.49 132.08 0)
 			(effects
 				(font
@@ -9192,6 +9414,24 @@
 				(hide yes)
 			)
 		)
+		(property "DPN" "RMCF0603FT470RCT-ND"
+			(at 97.79 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RMCF0603FT470R"
+			(at 97.79 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "360dd4a9-bccd-488a-98d4-b1f18e75cd81")
 		)
@@ -9413,6 +9653,24 @@
 				(hide yes)
 			)
 		)
+		(property "DPN" "RMCF0603FT5K10CT-ND"
+			(at 260.35 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RMCF0603FT5K10"
+			(at 260.35 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "db17e906-e6dd-4ce1-ba3d-89f30ed1a54e")
 		)
@@ -9480,6 +9738,24 @@
 				(hide yes)
 			)
 		)
+		(property "DPN" "RMCF0603FT5K10CT-ND"
+			(at 260.35 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RMCF0603FT5K10"
+			(at 260.35 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "db17e906-e6dd-4ce1-ba3d-89f30ed1a54f")
 		)
@@ -9539,6 +9815,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 97.79 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "RMCF0603FT62K0CT-ND"
+			(at 97.79 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RMCF0603FT62K0"
 			(at 97.79 165.1 0)
 			(effects
 				(font
@@ -9913,7 +10207,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_01x02"
+		(property "Value" "Conn_01x04"
 			(at 195.58 142.24 0)
 			(effects
 				(font
@@ -9921,7 +10215,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_EH_B4B-EH-A_1x04_P2.50mm_Vertical"
 			(at 195.58 151.13 0)
 			(effects
 				(font
@@ -9940,6 +10234,24 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 195.58 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "455-B4B-XH-A-ND"
+			(at 195.58 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "B4B-XH-A"
 			(at 195.58 151.13 0)
 			(effects
 				(font
@@ -10633,6 +10945,24 @@
 			)
 		)
 		(property "Description" "DC Motor"
+			(at 219.71 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "455-1704-ND"
+			(at 219.71 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "B2B-PH-K-S"
 			(at 219.71 58.42 0)
 			(effects
 				(font
@@ -11346,6 +11676,24 @@
 				(hide yes)
 			)
 		)
+		(property "DPN" "RMCF0603FT100KCT-ND"
+			(at 97.79 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RMCF0603FT100K"
+			(at 97.79 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3b294752-8d00-4367-9bdb-5fdc2f4d3f49")
 		)
@@ -11356,6 +11704,73 @@
 			(project "mainboard"
 				(path "/710151bd-e30e-4e9c-b9ee-6f0d49a79794"
 					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_3")
+		(lib_id "power:GND")
+		(at 33.02 135.89 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9555fb36-f03a-4617-a0f4-985a91a252b7")
+		(property "Reference" "#PWR057"
+			(at 33.02 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 33.02 140.0231 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 33.02 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 33.02 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 33.02 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8f920d85-4f32-4d63-bc00-f377e5a912b1")
+		)
+		(instances
+			(project "mainboard"
+				(path "/710151bd-e30e-4e9c-b9ee-6f0d49a79794"
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -11505,6 +11920,24 @@
 				(hide yes)
 			)
 		)
+		(property "DPN" "738-RMCF0603FT732KCT-ND"
+			(at 97.79 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RMCF0603FT732K"
+			(at 97.79 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "008027c2-4bc9-416f-9efd-1094aa71e339")
 		)
@@ -11567,6 +12000,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 35.56 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "RMCF0603FT10K0CT-ND"
+			(at 35.56 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RMCF0603FT10K0"
 			(at 35.56 38.1 0)
 			(effects
 				(font
@@ -11991,7 +12442,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D1.8mm_W1.8mm_H2.4mm_Horizontal_O1.27mm_Z1.6mm"
 			(at 54.61 30.48 0)
 			(effects
 				(font
@@ -12496,6 +12947,24 @@
 				(hide yes)
 			)
 		)
+		(property "DPN" "RMCF0603FT10K0CT-ND"
+			(at 30.48 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RMCF0603FT10K0"
+			(at 30.48 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a7a746c8-dd07-4e98-8cae-d12a5746b4d2")
 		)
@@ -12624,6 +13093,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 35.56 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "RMCF0603FT33K0CT-ND"
+			(at 35.56 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RMCF0603FT33K0"
 			(at 35.56 81.28 0)
 			(effects
 				(font
@@ -12987,6 +13474,24 @@
 				(hide yes)
 			)
 		)
+		(property "DPN" "RMCF0603FT1K00CT-ND"
+			(at 24.13 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RMCF0603FT1K00"
+			(at 24.13 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "93cec4eb-6cd1-4127-8495-fff7b017a3d7")
 		)
@@ -13049,6 +13554,24 @@
 			)
 		)
 		(property "Description" "DC Motor"
+			(at 219.71 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "455-1704-ND"
+			(at 219.71 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "B2B-PH-K-S"
 			(at 219.71 93.98 0)
 			(effects
 				(font
@@ -13164,7 +13687,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_BarrelJack:BarrelJack_GCT_DCJ200-10-A_Horizontal"
 			(at 186.69 124.206 0)
 			(effects
 				(font
@@ -13183,6 +13706,24 @@
 			)
 		)
 		(property "Description" "DC Barrel Jack"
+			(at 185.42 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "CP-002A-ND"
+			(at 185.42 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "PJ-002A"
 			(at 185.42 123.19 0)
 			(effects
 				(font
@@ -13394,6 +13935,24 @@
 				(hide yes)
 			)
 		)
+		(property "DPN" "RMCF0603FT10K0CT-ND"
+			(at 152.4 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RMCF0603FT10K0"
+			(at 152.4 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d22f976f-5082-4324-8f8d-bf94056a7aa1")
 		)
@@ -13527,16 +14086,16 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_SPDT")
-		(at 33.02 129.54 180)
+		(at 33.02 129.54 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "de294caa-bc0c-4fbf-8d6a-7dc17d06668d")
 		(property "Reference" "SW1"
-			(at 33.02 120.65 0)
+			(at 33.02 121.412 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13544,14 +14103,14 @@
 			)
 		)
 		(property "Value" "SW_SPDT"
-			(at 33.02 123.19 0)
+			(at 33.274 123.698 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "lib:SW_SPDT"
 			(at 33.02 129.54 0)
 			(effects
 				(font
@@ -13561,7 +14120,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 33.02 121.92 0)
+			(at 33.02 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13578,6 +14137,24 @@
 				(hide yes)
 			)
 		)
+		(property "DPN" "2449-MS1206L6-ND"
+			(at 33.02 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MS1206L6"
+			(at 33.02 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "af2fd28d-cf72-47f3-9588-73e70696ef48")
 		)
@@ -13586,6 +14163,9 @@
 		)
 		(pin "3"
 			(uuid "7802c480-3ef2-45b6-a9b3-a97b6b20149b")
+		)
+		(pin "M"
+			(uuid "e73215d0-2f42-48cb-80ce-007ce21cbb4e")
 		)
 		(instances
 			(project "mainboard"
@@ -14215,6 +14795,24 @@
 			)
 		)
 		(property "Description" "DC Motor"
+			(at 219.71 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "455-1704-ND"
+			(at 219.71 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "B2B-PH-K-S"
 			(at 219.71 40.64 0)
 			(effects
 				(font
