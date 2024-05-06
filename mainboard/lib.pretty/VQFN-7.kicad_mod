@@ -124,22 +124,14 @@
 		(uuid "b61162a7-d308-4242-83b9-5ad9f3c47f1f")
 	)
 	(pad "4" smd roundrect
-		(at 0.975 -0.75)
+		(at 0.975 0.75)
 		(size 0.45 0.25)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(roundrect_rratio 0.25)
 		(thermal_bridge_angle 0)
-		(uuid "bda749bc-e7e4-4315-829f-d4dbe52f39ff")
+		(uuid "97fb59cd-681e-41d8-8440-847ea7a9d334")
 	)
 	(pad "5" smd roundrect
-		(at 0.975 -0.25)
-		(size 0.45 0.25)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(roundrect_rratio 0.25)
-		(thermal_bridge_angle 0)
-		(uuid "6c5b69fa-cf68-41f2-af67-034ba826c435")
-	)
-	(pad "6" smd roundrect
 		(at 0.975 0.25)
 		(size 0.45 0.25)
 		(layers "F.Cu" "F.Paste" "F.Mask")
@@ -147,12 +139,31 @@
 		(thermal_bridge_angle 0)
 		(uuid "bb50b843-dacb-4778-93e9-e76905d64d83")
 	)
-	(pad "7" smd roundrect
-		(at 0.975 0.75)
+	(pad "6" smd roundrect
+		(at 0.975 -0.25)
 		(size 0.45 0.25)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(roundrect_rratio 0.25)
 		(thermal_bridge_angle 0)
-		(uuid "97fb59cd-681e-41d8-8440-847ea7a9d334")
+		(uuid "6c5b69fa-cf68-41f2-af67-034ba826c435")
+	)
+	(pad "7" smd roundrect
+		(at 0.975 -0.75)
+		(size 0.45 0.25)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(thermal_bridge_angle 0)
+		(uuid "bda749bc-e7e4-4315-829f-d4dbe52f39ff")
+	)
+	(model "${KIPRJMOD}/lib.pretty/TPS61022RWUR.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
 	)
 )

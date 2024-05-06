@@ -2820,6 +2820,16 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 78.74) (xy 118.11 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "107cd009-42b6-4f54-a13c-6cb3046e776f")
+	)
+	(wire
+		(pts
 			(xy 95.25 91.44) (xy 95.25 109.22)
 		)
 		(stroke
@@ -3180,6 +3190,16 @@
 	)
 	(wire
 		(pts
+			(xy 129.54 76.2) (xy 132.08 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52e5ebb0-ea97-493e-8d46-a5e1caf755c8")
+	)
+	(wire
+		(pts
 			(xy 160.02 60.96) (xy 160.02 58.42)
 		)
 		(stroke
@@ -3297,6 +3317,16 @@
 			(type default)
 		)
 		(uuid "7a6ad128-65c0-4fb2-977d-f0fae82e1700")
+	)
+	(wire
+		(pts
+			(xy 121.92 76.2) (xy 118.11 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b372816-0576-42fb-aa21-7d6097220df8")
 	)
 	(wire
 		(pts
@@ -3487,6 +3517,16 @@
 			(type default)
 		)
 		(uuid "a6b8e2d8-c042-4f33-8d0b-e80c7b71ee47")
+	)
+	(wire
+		(pts
+			(xy 129.54 78.74) (xy 132.08 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7cbca3e-71b6-46cf-b3cb-098cc6cbbb2e")
 	)
 	(wire
 		(pts
@@ -3961,7 +4001,7 @@
 	)
 	(global_label "USB_D+"
 		(shape input)
-		(at 132.08 76.2 180)
+		(at 118.11 76.2 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3971,7 +4011,7 @@
 		)
 		(uuid "17b9e52f-a524-4774-b364-2b4228491e62")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 121.5542 76.2 0)
+			(at 107.5842 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4159,7 +4199,7 @@
 	)
 	(global_label "USB_D-"
 		(shape input)
-		(at 132.08 78.74 180)
+		(at 118.11 78.74 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4169,7 +4209,7 @@
 		)
 		(uuid "e7726b72-1665-43f0-b84c-dd24cdaf9878")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 121.5542 78.74 0)
+			(at 107.5842 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4246,6 +4286,91 @@
 			(project "mainboard"
 				(path "/710151bd-e30e-4e9c-b9ee-6f0d49a79794/eadbe4be-210b-427d-b66a-812f3e0066c9"
 					(reference "#PWR048")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 125.73 78.74 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "07afbe8f-cf52-4b3a-a024-683b15fb5a28")
+		(property "Reference" "R20"
+			(at 125.73 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "27"
+			(at 125.73 83.312 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 125.73 80.518 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 125.73 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 125.73 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "CR0603-FX-27R0ELFCT-ND"
+			(at 125.73 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CR0603-FX-27R0ELF"
+			(at 125.73 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0af0fcdb-be8d-441e-8d33-dac3ac9e937e")
+		)
+		(pin "1"
+			(uuid "641a4dcd-2ab8-4684-815c-57b4764acaee")
+		)
+		(instances
+			(project "mainboard"
+				(path "/710151bd-e30e-4e9c-b9ee-6f0d49a79794/eadbe4be-210b-427d-b66a-812f3e0066c9"
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -4471,7 +4596,7 @@
 				)
 			)
 		)
-		(property "Footprint" "lib:SW_SPST_3.3x3.1"
+		(property "Footprint" "lib:SW_SPST_2.8x1.9"
 			(at 109.22 68.58 0)
 			(effects
 				(font
@@ -5533,6 +5658,91 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 125.73 76.2 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7331a24f-6f4f-4c1e-8f36-eecf419226ed")
+		(property "Reference" "R19"
+			(at 125.73 71.882 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "27"
+			(at 125.73 73.914 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 125.73 77.978 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 125.73 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 125.73 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "CR0603-FX-27R0ELFCT-ND"
+			(at 125.73 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CR0603-FX-27R0ELF"
+			(at 125.73 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7eefa2bc-8ecf-4241-9466-dbad13533fc7")
+		)
+		(pin "1"
+			(uuid "f2434c87-dea3-43de-a4b4-492c6f807e5e")
+		)
+		(instances
+			(project "mainboard"
+				(path "/710151bd-e30e-4e9c-b9ee-6f0d49a79794/eadbe4be-210b-427d-b66a-812f3e0066c9"
+					(reference "R19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 106.68 137.16 0)
 		(unit 1)
@@ -5872,7 +6082,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "lib:SW_SPST_3.3x3.1"
+		(property "Footprint" "lib:SW_SPST_2.8x1.9"
 			(at 63.5 127 0)
 			(effects
 				(font
