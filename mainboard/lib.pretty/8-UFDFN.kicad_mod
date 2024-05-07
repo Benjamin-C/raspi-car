@@ -27,7 +27,7 @@
 			)
 		)
 	)
-	(property "Footprint" ""
+	(property "Footprint" "8-UFDFN"
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
@@ -113,7 +113,7 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(roundrect_rratio 0.2)
 		(clearance 0.15)
-		(thermal_bridge_angle 45)
+		(thermal_bridge_angle 0)
 		(uuid "a0034e42-8519-4f9e-9174-b970f7e317d5")
 	)
 	(pad "2" smd roundrect
@@ -122,7 +122,7 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(roundrect_rratio 0.2)
 		(clearance 0.15)
-		(thermal_bridge_angle 45)
+		(thermal_bridge_angle 0)
 		(uuid "2d08f69a-72c4-4012-8012-4ce765f2479c")
 	)
 	(pad "3" smd roundrect
@@ -131,7 +131,7 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(roundrect_rratio 0.2)
 		(clearance 0.15)
-		(thermal_bridge_angle 45)
+		(thermal_bridge_angle 0)
 		(uuid "cafaf7ab-6f82-4d25-8b56-606f242837df")
 	)
 	(pad "4" smd roundrect
@@ -140,7 +140,7 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(roundrect_rratio 0.2)
 		(clearance 0.15)
-		(thermal_bridge_angle 45)
+		(thermal_bridge_angle 0)
 		(uuid "7fa57299-0fa4-4156-ad7c-4413d231624b")
 	)
 	(pad "5" smd roundrect
@@ -149,7 +149,7 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(roundrect_rratio 0.2)
 		(clearance 0.15)
-		(thermal_bridge_angle 45)
+		(thermal_bridge_angle 0)
 		(uuid "103eb329-bda9-401e-a949-a82d518cca63")
 	)
 	(pad "6" smd roundrect
@@ -158,7 +158,7 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(roundrect_rratio 0.2)
 		(clearance 0.15)
-		(thermal_bridge_angle 45)
+		(thermal_bridge_angle 0)
 		(uuid "fc63e8fc-a0ba-4735-8b52-592b5d312be3")
 	)
 	(pad "7" smd roundrect
@@ -167,7 +167,7 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(roundrect_rratio 0.2)
 		(clearance 0.15)
-		(thermal_bridge_angle 45)
+		(thermal_bridge_angle 0)
 		(uuid "8acb9439-3063-4346-99a5-ba54c297aa9e")
 	)
 	(pad "8" smd roundrect
@@ -176,7 +176,7 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(roundrect_rratio 0.2)
 		(clearance 0.15)
-		(thermal_bridge_angle 45)
+		(thermal_bridge_angle 0)
 		(uuid "2f92b9c7-ad7f-46bd-8ad0-232b0edee1e1")
 	)
 	(model "${KIPRJMOD}/lib.pretty/USON-8_UX_2x3x0p6_WIN.step"

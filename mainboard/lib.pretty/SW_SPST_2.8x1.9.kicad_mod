@@ -27,7 +27,7 @@
 			)
 		)
 	)
-	(property "Footprint" ""
+	(property "Footprint" "SW_SPST_2.8x1.9"
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
@@ -128,15 +128,6 @@
 		(uuid "1fa6888d-e8dc-423b-bcb6-35d1e0c4ef83")
 	)
 	(pad "2" smd roundrect
-		(at 1.275 -0.58)
-		(size 0.75 0.75)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(roundrect_rratio 0.25)
-		(thermal_bridge_width 1)
-		(thermal_bridge_angle 0)
-		(uuid "bed3e8e3-1209-4bcc-bc13-a227cd2f6574")
-	)
-	(pad "3" smd roundrect
 		(at -1.275 0.58)
 		(size 0.75 0.75)
 		(layers "F.Cu" "F.Paste" "F.Mask")
@@ -145,7 +136,16 @@
 		(thermal_bridge_angle 0)
 		(uuid "a00f5664-0644-473c-8f5e-686946d0dbfd")
 	)
-	(pad "4" smd roundrect
+	(pad "NC" smd roundrect
+		(at 1.275 -0.58)
+		(size 0.75 0.75)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(thermal_bridge_width 1)
+		(thermal_bridge_angle 0)
+		(uuid "bed3e8e3-1209-4bcc-bc13-a227cd2f6574")
+	)
+	(pad "NC" smd roundrect
 		(at 1.275 0.58)
 		(size 0.75 0.75)
 		(layers "F.Cu" "F.Paste" "F.Mask")

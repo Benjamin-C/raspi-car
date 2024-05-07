@@ -11,6 +11,108 @@
 		(company "Benjamin Crall")
 	)
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.762) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:C"
 			(pin_numbers hide)
 			(pin_names
@@ -2748,6 +2850,82 @@
 		(color 0 0 0 0)
 		(uuid "efda8cff-86b8-4ca2-a6ce-8a74c50f75c2")
 	)
+	(no_connect
+		(at 182.88 99.06)
+		(uuid "01a6197d-92c6-4528-a0ba-f63cea4bc98a")
+	)
+	(no_connect
+		(at 182.88 88.9)
+		(uuid "2097f8ca-35eb-4ff1-829c-4d6e782da837")
+	)
+	(no_connect
+		(at 182.88 116.84)
+		(uuid "2e4f776c-688a-4d63-bcd9-aefaf83bb017")
+	)
+	(no_connect
+		(at 182.88 142.24)
+		(uuid "5a4663d4-38f0-4ac6-870f-6ede9d6d4816")
+	)
+	(no_connect
+		(at 182.88 93.98)
+		(uuid "788ed0e7-2038-46f4-a5e0-d357f53fbb75")
+	)
+	(no_connect
+		(at 182.88 114.3)
+		(uuid "85821573-d2a6-41be-bf26-c6f86b90f89b")
+	)
+	(no_connect
+		(at 182.88 106.68)
+		(uuid "a7fe55a1-82f1-4a9e-82fa-5e09f89b79a6")
+	)
+	(no_connect
+		(at 182.88 121.92)
+		(uuid "b0a430af-bb3d-42ea-aed2-4218c2e15f40")
+	)
+	(no_connect
+		(at 182.88 119.38)
+		(uuid "c2440f8c-3835-4f75-a808-937d45987374")
+	)
+	(no_connect
+		(at 182.88 104.14)
+		(uuid "c9907223-44ed-4691-ae39-bfa8ce57705e")
+	)
+	(no_connect
+		(at 182.88 96.52)
+		(uuid "ca6a7b9d-4c52-4734-ba44-d672b4747fab")
+	)
+	(no_connect
+		(at 182.88 91.44)
+		(uuid "d1663d1a-8203-4e87-88ed-20eb50a3220a")
+	)
+	(no_connect
+		(at 182.88 144.78)
+		(uuid "d3848436-f8f6-4659-8639-ba98b09895d2")
+	)
+	(no_connect
+		(at 182.88 129.54)
+		(uuid "debf6015-2aed-4ac0-9692-61abb841462c")
+	)
+	(no_connect
+		(at 182.88 101.6)
+		(uuid "dfe5a062-5108-4436-88c8-6d21adaeb3af")
+	)
+	(no_connect
+		(at 132.08 137.16)
+		(uuid "e2312943-317b-4ab4-a7fc-a5bd7e4d1518")
+	)
+	(no_connect
+		(at 182.88 127)
+		(uuid "e3bfc488-5ceb-484b-9659-298954d9ac9e")
+	)
+	(no_connect
+		(at 182.88 124.46)
+		(uuid "e4985cf8-758d-451c-8252-032f10ec13ac")
+	)
+	(no_connect
+		(at 132.08 134.62)
+		(uuid "fc4edc90-56c7-4a98-aa67-d76d3d09e579")
+	)
 	(wire
 		(pts
 			(xy 138.43 43.18) (xy 138.43 45.72)
@@ -5234,6 +5412,71 @@
 			(project "mainboard"
 				(path "/710151bd-e30e-4e9c-b9ee-6f0d49a79794/eadbe4be-210b-427d-b66a-812f3e0066c9"
 					(reference "#PWR046")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 182.88 139.7 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "507f17da-f184-41d2-bd91-7aa1fb6a273e")
+		(property "Reference" "TP7"
+			(at 189.23 139.7 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 186.182 142.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 182.88 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 182.88 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 182.88 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fa5e3669-1fcb-4c98-94af-c6db0861413e")
+		)
+		(instances
+			(project "mainboard"
+				(path "/710151bd-e30e-4e9c-b9ee-6f0d49a79794/eadbe4be-210b-427d-b66a-812f3e0066c9"
+					(reference "TP7")
 					(unit 1)
 				)
 			)
