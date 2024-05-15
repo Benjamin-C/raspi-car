@@ -1,7 +1,4 @@
-import pygame
-pygame.init()
-
-import time
+from robocar import GameController
 
 # Set up logging
 import logging
@@ -9,21 +6,7 @@ logging.basicConfig()
 log = logging.getLogger("demo")
 log.setLevel(logging.DEBUG)
 
-# Verify that the controller exists
-pygame.joystick.init()
-ct = pygame.joystick.get_count()
-log.debug(f"There are {ct} joysticks")
-if ct < 1:
-    log.critical("No controller detected, aborting")
-    exit()
-
-# Get the controller
-c = pygame.joystick.Joystick(0)
-c.init()
-log.debug(f"My joystick has {c.get_numaxes()} axes, {c.get_numhats()} hats, and {c.get_numbuttons()} buttons")
-log.info(f"Joystick connected")
-
-log.info("Started!")
+import time
 
 def calcMotors(fb_speed, rl_speed, turnspeed):
     ''' Calculates motor speeds from desired direction
@@ -72,29 +55,12 @@ def setMotors(fr:float|list, fl:float=None, br:float=None, bl:float=None):
         m = (fr, fl, br, bl)
     # Set motor speed. Just log for now, later talk to the mainboard to actually drive the motors
     log.info(f"Motors: {' '.join([f'{v:>-5.2f}' for v in m])}")
-    
 
-while True:
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            exit()
-        
-        # if event.type == pygame.JOYBUTTONDOWN:
-        #     log.info(f"Button {event.button} pressed")
-
-        # if event.type == pygame.JOYBUTTONUP:
-        #     log.info(f"Button {event.button} released")
-
-        # if e.type == pygame.JOYAXISMOTION:
-        #     # log.info(f"Joystick! {' '.join([f'{c.get_axis(i):.2f}' for i in range(c.get_numaxes())])}")
-
-        # Only respond to relevent events
-        if event.type in [pygame.JOYBUTTONDOWN, pygame.JOYBUTTONUP, pygame.JOYAXISMOTION]:
-            # Dead man's switch; require both R1 and L1 to be pressed to move
-            if c.get_button(6) and c.get_button(7):
-                m = calcMotors(c.get_axis(3)*-1, c.get_axis(2), c.get_axis(0))
-                setMotors(m)
-            else:
-                setMotors(0)
-
-
+with GameController() as gc:
+    while(True):
+        if gc.getButton(GameController.BUTTON_L1) and gc.getButton(GameController.BUTTON_R1):
+            m = calcMotors(gc.getAxies(GameController.AXES_RIGHT_VERT), gc.getAxies(GameController.AXES_RIGHT_HORIZ), gc.getAxies(GameController.AXES_LEFT_HORIZ))
+            setMotors(m)
+        else:
+            setMotors(0)
+        time.sleep(0.01)
