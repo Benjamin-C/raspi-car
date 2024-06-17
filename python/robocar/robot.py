@@ -69,6 +69,30 @@ class Robot():
         if time is not None:
             self.stop(time)
 
+    def driveLeft(self, speed: float = 1, time: int = None):
+        ''' Drive the robot straight left at the set speed. Defaults to 1 if not specified '''
+        self.sendDriveCommand(-speed, speed, speed, -speed)
+        if time is not None:
+            self.stop(time)
+
+    def driveRight(self, speed: float = 1, time: int = None):
+        ''' Drive the robot straight right at the set speed. Defaults to 1 if not specified '''
+        self.sendDriveCommand(speed, -speed, -speed, speed)
+        if time is not None:
+            self.stop(time)
+
+    def turnLeft(self, speed: float = 1, time: int = None):
+        ''' Turn the robot left at the set speed. Defaults to 1 if not specified '''
+        self.sendDriveCommand(-speed, speed, -speed, speed)
+        if time is not None:
+            self.stop(time)
+
+    def turnRight(self, speed: float = 1, time: int = None):
+        ''' Turn the robot right at the set speed. Defaults to 1 if not specified '''
+        self.sendDriveCommand(speed, -speed, speed, -speed)
+        if time is not None:
+            self.stop(time)
+
     def stop(self, delay: int = None):
         ''' Stops the car. Optionally waits delay seconds first '''
         if delay is not None:
