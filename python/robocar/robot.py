@@ -39,6 +39,7 @@ class Robot():
 
     def deinit(self):
         if self.running:
+            self.stop()
             self._serial.close()
             # print("Fake close! Ya!")
 
