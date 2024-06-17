@@ -62,3 +62,7 @@ class Robot():
     def driveBackward(self, speed: float = 1):
         ''' Drive the robot backward at the set speed. Defaults to 1 if not specified '''
         self.sendDriveCommand(-speed, -speed, -speed, -speed)
+
+    def stop(self):
+        ''' Stops the car '''
+        self.sendDriveCommand(0, 0, 0, 0)
