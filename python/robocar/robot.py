@@ -1,4 +1,5 @@
 import serial
+import time
 
 class Robot():
     def __init__(self, port: str = "/dev/ttyACM0") -> None:
@@ -56,14 +57,20 @@ class Robot():
         # Send the values
         self._serialPrint(' '.join([str(s) for s in self.speeds]))
 
-    def driveForward(self, speed: float = 1):
+    def driveForward(self, speed: float = 1, time: int = None):
         ''' Drive the robot forward at the set speed. Defaults to 1 if not specified '''
         self.sendDriveCommand(speed, speed, speed, speed)
+        if time is not None:
+            self.stop(time)
 
-    def driveBackward(self, speed: float = 1):
+    def driveBackward(self, speed: float = 1, time: int = None):
         ''' Drive the robot backward at the set speed. Defaults to 1 if not specified '''
         self.sendDriveCommand(-speed, -speed, -speed, -speed)
+        if time is not None:
+            self.stop(time)
 
-    def stop(self):
-        ''' Stops the car '''
+    def stop(self, delay: int = None):
+        ''' Stops the car. Optionally waits delay seconds first '''
+        if delay is not None:
+            time.sleep(delay)
         self.sendDriveCommand(0, 0, 0, 0)
