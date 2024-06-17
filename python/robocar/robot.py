@@ -44,7 +44,7 @@ class Robot():
 
     def _serialPrint(self, msg: str):
         print("Serial msg:" + msg)
-        self._serial.write(bytes(msg + "\r\n"))
+        self._serial.write((msg + "\r\n").encode("utf-8"))
 
     def sendDriveCommand(self, fl: float = None, fr: float = None, bl: float = None, br: float = None):
         ''' Sends the set speeds to the motors '''
