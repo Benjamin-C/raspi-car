@@ -27,10 +27,10 @@ class Robot():
     def init(self):
         if not self.running:
             try:
-                # self._serial = serial.Serial(self.port)
-                # self._serial.open()
+                self._serial = serial.Serial(self.port)
+                self._serial.open()
                 self.__running = True
-                print("Fake opened! Ya!")
+                # print("Fake opened! Ya!")
             except:
                 print("Could not open serial port")
         else:
@@ -38,8 +38,8 @@ class Robot():
 
     def deinit(self):
         if self.running:
-            # self._serial.close()
-            print("Fake close! Ya!")
+            self._serial.close()
+            # print("Fake close! Ya!")
 
     def _serialPrint(self, msg: str):
         print("Serial msg:" + msg)
