@@ -28,7 +28,7 @@ class Robot():
         if not self.running:
             try:
                 self._serial = serial.Serial(self.port)
-                self._serial.open()
+                # self._serial.open()
                 self.__running = True
                 # print("Fake opened! Ya!")
             except:
@@ -43,6 +43,7 @@ class Robot():
 
     def _serialPrint(self, msg: str):
         print("Serial msg:" + msg)
+        self._serial.write(bytes(msg + "\r\n"))
 
     def sendDriveCommand(self, fl: float = None, fr: float = None, bl: float = None, br: float = None):
         ''' Sends the set speeds to the motors '''
