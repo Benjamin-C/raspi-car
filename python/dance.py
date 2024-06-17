@@ -22,7 +22,9 @@ with Robot() as r:
                 time.sleep(0.25)
                 r.driveBackward(speed, 0.25)
                 time.sleep(0.25)
-            r.turnLeft(speed, (turnTime*0.25)/speed)
-            time.sleep(1 - (turnTime*0.25)/speed)
+            r.turnLeft(speed, (turnTime*0.27)/speed)
+            time.sleep(1 - (turnTime*0.27)/speed)
+        r.driveLeft(1, 1)
+        r.driveRight(1, 1)
 
 
