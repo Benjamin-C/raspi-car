@@ -4,8 +4,10 @@ from robocar import DepthCamera, P2Pro, Robot
 import cv2
 import time
 
-speed = 0.5
-turnTime = 3.27
+speed = 1
+
+hsTurnTime = 3.27
+turnTime = hsTurnTime/speed
 
 with Robot() as r:
     for i in range(4):
